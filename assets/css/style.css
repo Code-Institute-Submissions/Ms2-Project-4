@@ -227,3 +227,37 @@ div.grid-lv3 img{
     text-shadow: 4px 5px 11px #0000006b;
     cursor: pointer;
 }
+
+/* --Media Queries--*/
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 5px;
+        justify-content: center;
+    }
+    img {
+    height:125px;
+    width: 100px;
+}
+}
+
+@media only screen and (max-width: 600px){
+    .grid-lv3 {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        grid-gap: 2px;
+        justify-content: center;
+    }
+    img {
+    height:110px;
+    width: 80px;
+}
+}
