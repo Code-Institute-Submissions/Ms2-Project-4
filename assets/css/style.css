@@ -83,3 +83,113 @@ body {
       background-color: #414744;
     text-shadow: 3px 3px 4px #0000008c;
 }
+
+/* -- Game Pages --- */
+
+.button {
+     display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: tomahackregular, sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #a1a193c2;
+    text-align: center;
+    transition: all 0.2s;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    box-shadow: 4px 5px 11px #0000006b;
+    text-shadow: 1px 1px 2px #0000009e;
+}
+
+.button:focus {
+    outline: none;
+}
+
+#overlay {
+   /*background: rgba(0, 0, 0, 0.486);*/
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgb(18 18 23 / 83%) 30%, rgb(62 58 97 / 70%) 70%, rgba(0,212,255,0) 100%);
+    bottom: auto;
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    top: auto;
+    z-index: 10;
+}
+
+#overlay-win {
+   /*background: rgba(0, 0, 0, 0.486);*/
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgb(18 18 23 / 83%) 30%, rgb(62 58 97 / 70%) 70%, rgba(0,212,255,0) 100%);
+    bottom: auto;
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    top: auto;
+    z-index: 10;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, auto));;
+    grid-gap: 15px;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+/* --- The board --- */
+
+.grid-lv3 {
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-gap: 10px;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#gameboard {
+    pointer-events: none;
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+}
+.center1 {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+/* -- Scoreboard--- */
+
+#score {
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-shadow:4px 7px 16px #a71d1dee;;
+    background: -webkit-linear-gradient(#e6071c, #e6f508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#result{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 4px 7px 16px #a71d1dee;;
+    background: -webkit-linear-gradient(#e6071c, #e6f508);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
