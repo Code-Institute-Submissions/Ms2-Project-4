@@ -113,7 +113,7 @@ const cardArray = [
     }
   }
 
-  // Card Flip
+// Card Flip
 
 var cardsFlipped = 0;
   function flipCard() {
@@ -133,3 +133,20 @@ var cardsFlipped = 0;
 }
   createBoard();
 });
+
+//The Sound Board
+
+var bgmusic = new Audio("assets/audio/bg-music.mp3");
+var win = new Audio("assets/audio/fireworks-end.mp3");
+var flipSound = new Audio("assets/audio/woosh.wav");
+var laugh = new Audio("assets/audio/luffy-laugh.wav");
+flipSound.volume = 0.1;
+laugh.volume = 0.1;
+
+function bgMusic() {
+    bgmusic.play();
+}
+function stopMusic(){
+    bgmusic.pause();
+    bgmusic.currentTime = 0;
+}
