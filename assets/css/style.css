@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "tomahackregular";
+    src: url("../fonts/tomahack-webfont.woff2") format("woff2"),
+         url("../fontstomahack-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(rgb(124, 255, 248),rgb(92, 248, 240), rgb(46, 48, 170), rgb(37, 39, 141));
+  font-family: "tomahackregular";
+  max-width: 1400px;
+  overflow-x: hidden;
+  margin: auto;
+}
