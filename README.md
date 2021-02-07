@@ -1,45 +1,222 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## The Anime Memory Game by Peter Freemantle
 
-Welcome SdMusic,
+<img src="assets/images/read-me-pic.png">
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+# UX
 
-## Gitpod Reminders
+## 1.1 What is the Site About
+'The Anime Memory Game' Is a interactive site allowing the user to play 3 different levels of anime related memory game.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## 1.2 What is the Purpose of the Site
+The site has a practical and a theoretical purpose:
 
-`python3 -m http.server`
+## Practical:
+The practical purpose of this site is to showcase my abilities as a developer and to put into practice the knowledge I have acquired over the period of my course. This site concept of this practical application is to create a site that is interactive through JavaScript and using CSS and html styling, With a view to allow further development, for back end systems and updates to functionality. As such, the site is constructed with Bootstrap as a partial base with custom CSS overlaying and JavaScript functionality to show an understanding of these elements.
 
-A blue button should appear to click: *Make Public*,
+## Theoretical:
+The goal is to create a page that allows the user access a anime related memory game, to help pass the time and have abit of fun. 
 
-Another blue button should appear to click: *Open Browser*.
+## 1.3 Who Built the Site and Why
+This site was conceived, designed and built by Peter Freemantle for his second milestone project "Interactive Frontend Development Milestone Project", as part of his Full-Stack Developer Diploma course from Code Institute, through Edinburgh Napier University. He has been a part of the hospitality industry and a chef from 2008-2020.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## 1.4 Concept
+This will be a multiple page interactive website, allowing users to access 3 levels of a anime memory game. The home page will be a panel screen providing navigation to the users desired level choice, header with brand imaging and a footer with notable information. Each respective level page will have a navigation bar, matching banner text and footer and game elements across all pages. In desktop the links will keep across full screen, but move to a burger icon when in mobile, allowing for the content to be kept clear and visible. The new menu will have active screens set, allowing the user to know where they are on the site.
 
-A blue button should appear to click: *Make Public*,
+The site will be fully responsive and optimized to be viewed on different screen sizes and devices.
 
-Another blue button should appear to click: *Open Browser*.
+## 1.5 User Stories
+As a anime fan with some time to kill why not play a memory game. Well hello theere 'Anime Memory Game' is here to the rescue. Coming off a google search i know what im expecting and want to get straight to it.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## 2 Site Content, Structure Concept and Development
 
-## Updates Since The Instructional Video
+### 2.1 Pages Overview
+The website consists of four pages, accessible through the homepage navigation links and a navigation bar at the top of each level page.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Home Page: Header, footer and a navigation panel consisting of picture links and text for the varying game levels.
+Page link: (https://sdmusic.github.io/Ms2-Project/index.html)
+<img src="assets/images/homepage.png">
+* Level 1: Header, nav and game panel made of 12 cards showing blank backs and allowing the play of the memory game.
+Page link: (https://sdmusic.github.io/Ms2-Project/level1.html)
+<img src="assets/images/level1.png">
+* Level 2: Header, nav and game panel made of 18 cards showing blank backs and allowing the play of the memory game.
+Page link: (https://sdmusic.github.io/Ms2-Project/level2.html)
+<img src="assets/images/level2.png">
+* Level 3: Header, nav and game panel made of 24 cards showing blank backs and allowing the play of the memory game.
+Page link: (https://sdmusic.github.io/Ms2-Project/level3.html)
+<img src="assets/images/level3.png">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### WireFrames from concept
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Are all located in a pdf <a href="assets/wireframes/Anime Memory Wirerames.pdf" target="_top">Anime Memory WireFrames</a>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## 3 Technologies Used
+### 3.1 HTML or Hyper Text Markup Language
+Used to construct all the pages of this web site. For further info on this language; https://developer.mozilla.org/en-US/docs/Web/HTML
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### 3.2 CSS or Cascading Style Sheets
+Is used to style various elements on a web page via colouring, fonts, spacing, etc. For further info, see this link; https://www.w3.org/Style/CSS/Overview.en.html
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### 3.3 Bootstrap
+Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms. Bootstrap also supports JavaScript extensions.For ease of development, Bootstrap [v4.4.1] (https://getbootstrap.com/docs/4.4/getting-started/introduction/) is employed in several areas of the site including:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### 3.4 Chrome DevTools
+Web developer tools built directly into the Google Chrome browser. I used these tools at every step to test the functionality of my code. https://developers.google.com/web/tools/chrome-devtools
 
---------
+### 3.5 Javascript
+JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions
 
-Happy coding!
+### 3.6 Google Fonts
+Fonts are provided by Google Fonts
+
+### 3.7 Gitpod
+An online IDE which streamlines developer workflows by providing prebuilt, collaborative development environments in your browser - powered by VS Code. It does not have to be installed on your PC. This website has been constructed using Gitpod IDE
+
+### 3.8 GitHub Repository
+This website is hosted on GitHub
+GitHub Repository:https://github.com/SdMusic/Ms2-Project
+Deployed Link: https://sdmusic.github.io/Ms2-Project/index.html
+
+### 3.9 W3C Markup Validation Service
+Used to run all html and CSS code through a validation to identify if the code meets current standards and whether or not it is showing errors. https://validator.w3.org/ https://jigsaw.w3.org/css-validator/validator
+
+### 3.10 JShint service 
+Used to run all Javascript through a validation to identify any code not confoming to current standards.
+https://jshint.com/
+
+### 4.0 Screenshot - Full Page Screen Capture
+This is a chrome extension used to capture full screen images
+https://chrome.google.com/webstore/detail/screenshot-full-page-scre/ejkbkgbliokmbblkklofdehalgbplkfg?hl=en
+
+
+
+## Deployment
+
+The site is built on Gitpod, with all source code and assets hosted on GitHub. This is done through the following procedure
+
+All files and code once saved is added to a temporary git directory using the [git add .] command.
+
+"Added" files can then be committed to the git repository using the [git commit -m""] command. This requires commenting for each commit allowing you to see the changes that have been made and provide backup points.
+
+The code is uploaded to the GitHub repository through the [git push] command.
+
+Deployment to GitHub pages is done through the GitHub site; through settings, then GitHub pages and setting the live pages URL.
+
+All versions are held on the master branch.
+
+Prior to deployment, the site could be viewed in real time by adding the following command to the terminal window, and selecting "Open Browser" from the modal that displays: python3 -m http.server
+
+## Testing
+
+Testing has been carried out using the following devices/browsers:
+
+Desktop
+Chrome
+Firefox
+Chrome Responsive emulator
+Huawei P30 Pro
+Samsung Galaxy 7
+
+### Page Layouts
+
+I used http://ami.responsivedesign.is/ (source for top picture) to see how the site displays on ranging devices and their viewports, all pages, links, icons performed as expected on all devices.
+
+
+### Target audience Testing
+Target audience testing was maintained through out the development of this project. It was used for design feedback wants 
+of the audience and to uncover any bugs in the application. I had 3 children and 6 adults participate in this testing with the 
+instructions of try to break this.
+
+### Navigation Bar
+
+- Test 1: Click each navigation link
+- Result: Verify page navigates to correct page
+- Test 2: Move through responsive sizing
+- Result: All elements respond to test 1 
+- Test 3: Hamburger icon activates at right point and links respond
+- Result: Hamburger activates at correct point and links respond to test 1
+
+### Navigation HomePage
+- Test 1: Click each navigation link
+- Result: Verify page navigates to correct page
+- Test 2: Move through responsive sizing
+- Result: All elements are responsive and fufill test 1 
+
+### Gameboard (.grid)
+- Test 1: Images display in correct place and are responsive
+- Result: All images correct and grid responds in intended manor.
+- Test 2: noselect and click and drag abilities removed
+- Result: noselect and click and drag abilities removed so unable to select or drag cards in grid
+- Test 3:
+
+### JavaScript linked buttons
+- Test 1: Stopmusic, stops the music on onclick function
+- Result: Stops the music on onclick function
+- Test 2: Playmusic, starts the intend music on onclick function
+- Result: Starts the intend music on onclick function
+- Test 3: Restart, reloads the current page to restart the game on onclick function
+- Result: Current page is reloaded on onclick function
+
+### Moves counter
+- Test 1: Clicked card displays count for each card clicked in moves div
+- Result: Displays each card clicked
+- Test 2: CLicking outside cards to test only cards move counter
+- Result: Only cards being clicked moves counter
+- Test 4: Moves position displays correctly
+- Result: Moves shows in correct positioning on responsive design
+
+### Timer
+- Test 1: Timer Displays correctly
+- Result: Displays minutes and seconds
+- Test 2: Timer starts at set times
+- Result: Only starts when overlay start game is clicked
+- Test 3: Timer stops at correct point
+- Result: Timer stops when game is over
+- Test 4: Timer position displays correctly
+- Result: Timer shows in correct positioning on responsive design
+
+
+### Js functions
+
+- Test 1: Functions display intend result and do not contradict any other function
+- Result: All functions display intended results
+- Test 2: Game used in different ways
+- Result: Functions complete intended function correctly
+
+
+
+## Bugs & Fixes
+- Timer starts when page loaded - added empty global var and assigned start function to fill
+- Game able to be played before timer start - overlay added with pointer null to a start game fuction
+- When clicked in quick succesion 3 card can remain displayed. Fixed with global var counting cards flipped and not allowing more than 2 
+with var being reset when check match is called.
+- Score displayed to decimal point, fixed by putting sum through new var and Math.round().
+- Stop timer function not working - Scope changed to correct error.
+
+## Credits and Acknowledgements
+
+### Code snippets
+Snippets of code that I edited and used as examples are listed below:
+- Button styling: https://fdossena.com/?p=html5cool/buttons/i.frag
+- Navs from: (https://getbootstrap.com/docs/4.0/components/navs/)
+- Columns from: (https://getbootstrap.com/docs/4.0/layout/grid/)
+- Contact Form from: (https://getbootstrap.com/docs/4.0/components/forms/)
+- Spacing Utilities - (https://getbootstrap.com/docs/4.0/utilities/spacing/)
+- Elements from my previous project including readme format.
+- Fireworks css - (https://codepen.io/yshlin/pen/ylDEk)
+
+
+### Audio from:
+- https://www.myinstants.com/
+- https://www.voicy.network/tags/luffy
+- https://www.youtube.com/watch?v=9vNmQ8cleT4
+
+### Images from: 
+- https://shopee.co.th/ope-diy-hand-woven-necklace-rope-bracelet-rope-jade-thread-Chinese-knot-rope-thick-red-rope-pendant-pendant-rope-haybo01-i.132588053.5611983167
+- https://www.favicon.cc/?action=icon&file_id=520287
+- https://www.wallpaperflare.com/one-piece-poster-anime-2560x1440-one-piece-wanted-poster-wallpaper-udhbx
+
+### Generalised issues and solutions:
+
+- https://stackoverflow.com/
+- https://www.w3schools.com/
