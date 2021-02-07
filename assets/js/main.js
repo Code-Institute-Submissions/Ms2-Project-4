@@ -1,3 +1,18 @@
+var overlay = $("#overlay");
+  overlay.on("click", function (e) {
+        overlay
+            .hide()
+            .off();
+            bgMusic();
+            startGame();
+            startTimer();
+
+   });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    
+
 //The Cards
 
 const cardArray = [
@@ -73,7 +88,7 @@ const cardArray = [
     }
   }
 
-  //Card Match Check
+//Card Match Check
 
   function checkForMatch() {
     const cards = document.querySelectorAll("img");
@@ -133,7 +148,6 @@ var cardsFlipped = 0;
 }
   createBoard();
 });
-
 //The Sound Board
 
 var bgmusic = new Audio("assets/audio/bg-music.mp3");
@@ -149,4 +163,65 @@ function bgMusic() {
 function stopMusic(){
     bgmusic.pause();
     bgmusic.currentTime = 0;
+}
+//The Timer
+function startTimer() {
+    timer = setInterval(countTimer, 1000);
+}
+
+var timer = [];
+var totalSeconds = 0;
+function countTimer() {
+           ++totalSeconds;
+           var minute = Math.floor(totalSeconds /60);
+           var seconds = totalSeconds - (minute*60);
+           if(minute < 10)
+             minute = "0"+minute;
+           if(seconds < 10)
+             seconds = "0"+seconds;
+           document.getElementById("timer").innerHTML =  minute + ":" + seconds;
+        }
+
+function stopTimer() {
+      clearInterval(timer);
+    }
+    
+//Move Counter
+
+let moves = 0;
+const counter = document.querySelector(".moves");
+function moveCounter() {
+  moves++;
+  counter.innerHTML = moves;
+}
+
+//Final Score
+
+const score = document.querySelector("score");
+
+function finalScore(){
+    document.getElementById("fireworks").classList.add("pyro");
+    var scoreSum = moves/totalSeconds*1000;
+    var scoreResult =  Math.round(scoreSum);
+    document.getElementById("score").innerHTML = "Your Score: <br>" + scoreResult;
+    var nodes = document.getElementById("spin").childNodes;
+    for (var i=0; i<nodes.length; i++) {
+    nodes[i].classList.add("spin1");
+    if(i%2==0){
+        nodes[i].classList.remove("spin1");
+        nodes[i].classList.add("spin");
+    }
+    }
+    
+    document.getElementById("overlay-win").classList.add("overlay-win");
+}
+
+// Start & Reset Game
+
+function startGame(){
+    document.getElementById("gameboard").style["pointer-events"] = "all";
+}
+
+function restart() {
+    window.location.reload();
 }
