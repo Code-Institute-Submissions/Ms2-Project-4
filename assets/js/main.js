@@ -112,3 +112,24 @@ const cardArray = [
       finalScore();
     }
   }
+
+  // Card Flip
+
+var cardsFlipped = 0;
+  function flipCard() {
+    ++cardsFlipped;
+    if (cardsFlipped < 3) {
+    let cardId = this.getAttribute("data-id");
+    this.removeEventListener("mousedown", flipCard);
+    cardsChosen.push(cardArray[cardId].name);
+    cardsChosenId.push(cardId);
+    this.setAttribute("src", cardArray[cardId].img);
+    flipSound.play();
+    moveCounter();
+    if (cardsChosen.length ===2) {
+        setTimeout(checkForMatch, 500);
+    }
+  }
+}
+  createBoard();
+});
