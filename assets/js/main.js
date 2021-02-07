@@ -72,3 +72,43 @@ const cardArray = [
       grid.appendChild(card);
     }
   }
+
+  //Card Match Check
+
+  function checkForMatch() {
+    const cards = document.querySelectorAll("img");
+    const optionOneId = cardsChosenId[0];
+    const optionTwoId = cardsChosenId[1];
+    cardsFlipped = 0;
+    if(optionOneId == optionTwoId) {
+      cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionOneId].addEventListener("mousedown", flipCard);
+      cards[optionTwoId].addEventListener("mousedown", flipCard);
+    }
+    else if (cardsChosen[0] === cardsChosen[1]) {
+      laugh.play();
+      cards[optionOneId].classList.remove("hvr-float-shadow");
+      cards[optionTwoId].classList.remove("hvr-float-shadow");
+      cards[optionOneId].classList.add("float-shadow");
+      cards[optionTwoId].classList.add("float-shadow");
+      cards[optionOneId].removeEventListener("mousedown", flipCard);
+      cards[optionTwoId].removeEventListener("mousedown", flipCard);
+      cardsWon.push(cardsChosen);
+    } else {
+      cards[optionOneId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionTwoId].setAttribute("src", "assets/images/blank.jpg");
+      cards[optionOneId].addEventListener("mousedown", flipCard);
+      cards[optionTwoId].addEventListener("mousedown", flipCard);
+    }
+    cardsChosen = [];
+    cardsChosenId = [];
+    if  (cardsWon.length === cardArray.length/2) {
+      resultDisplay.innerHTML = "Yattaaaa!!! <br> You are the Pirate King!!";
+
+      stopMusic();
+      stopTimer();
+      win.play();
+      finalScore();
+    }
+  }
