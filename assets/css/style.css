@@ -71,3 +71,15 @@ body {
     box-shadow: 4px 5px 11px #0000006b;
 }
 
+/*------------------------------------Navbar*/
+
+
+.navbar-nav li {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.bg-grey{
+      background-color: #414744;
+    text-shadow: 3px 3px 4px #0000008c;
+}
