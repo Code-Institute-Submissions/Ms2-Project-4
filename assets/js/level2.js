@@ -16,75 +16,99 @@ document.addEventListener("DOMContentLoaded", () => {
 const cardArray = [
     {
         name: "ace",
-        img: "assets/images/ace.png"
+        img: " assets/images/ace.png"
     },
     {
         name: "luffy",
-        img: "assets/images/luffy.png"
+        img: " assets/images/luffy.png"
     },
     {
         name: "nami",
-        img: "assets/images/nami.png"
+        img: " assets/images/nami.png"
     },
     {
         name: "chopper",
-        img: "assets/images/chopper.png"
+        img: " assets/images/chopper.png"
     },
     {
         name: "nico-robin",
-        img: "assets/images/nico-robin.png"
+        img: " assets/images/nico-robin.png"
     },
     {
         name: "franky",
-        img: "assets/images/franky.png"
+        img: " assets/images/franky.png"
     },
     {
         name: "bellamy",
-        img: "assets/images/bellamy.png"
+        img: " assets/images/bellamy.png"
     },
     {
         name: "crocodile",
-        img: "assets/images/crocodile.png"
+        img: " assets/images/crocodile.png"
     },
     {
         name: "doruflamingo",
-        img: "assets/images/doruflamingo.png"
+        img: " assets/images/doruflamingo.png"
     },
-        {
+    {
+        name: "foxy",
+        img: " assets/images/foxy.png"
+    },
+    {
+        name: "mihawk",
+        img: " assets/images/mihawk.png"
+    },
+    {
+        name: "kuro",
+        img: " assets/images/kuro.png"
+    },
+    {
         name: "ace",
-        img: "assets/images/ace.png"
+        img: " assets/images/ace.png"
     },
     {
         name: "luffy",
-        img: "assets/images/luffy.png"
+        img: " assets/images/luffy.png"
     },
     {
         name: "nami",
-        img: "assets/images/nami.png"
+        img: " assets/images/nami.png"
     },
     {
         name: "chopper",
-        img: "assets/images/chopper.png"
+        img: " assets/images/chopper.png"
     },
     {
         name: "nico-robin",
-        img: "assets/images/nico-robin.png"
+        img: " assets/images/nico-robin.png"
     },
     {
         name: "franky",
-        img: "assets/images/franky.png"
+        img: " assets/images/franky.png"
     },
     {
         name: "bellamy",
-        img: "assets/images/bellamy.png"
+        img: " assets/images/bellamy.png"
     },
     {
         name: "crocodile",
-        img: "assets/images/crocodile.png"
+        img: " assets/images/crocodile.png"
     },
     {
         name: "doruflamingo",
-        img: "assets/images/doruflamingo.png"
+        img: " assets/images/doruflamingo.png"
+    },
+    {
+        name: "foxy",
+        img: " assets/images/foxy.png"
+    },
+    {
+        name: "mihawk",
+        img: " assets/images/mihawk.png"
+    },
+    {
+        name: "kuro",
+        img: " assets/images/kuro.png"
     },
 ];
 
@@ -92,7 +116,7 @@ const cardArray = [
 
   cardArray.sort(() => 0.5 - Math.random());
 
-  const grid = document.querySelector(".grid");
+  const grid = document.querySelector(".grid-lv3");
   const resultDisplay = document.querySelector("#result");
   var cardsChosen = [];
   var cardsChosenId = [];
@@ -218,7 +242,7 @@ function stopTimer() {
 //Move Counter
 
 let moves = 0;
-const counter = document.querySelector(".moves");
+var counter = document.querySelector(".moves");
 function moveCounter() {
   moves++;
   counter.innerHTML = moves;
@@ -254,4 +278,3 @@ function startGame(){
 function restart() {
     window.location.reload();
 }
-
