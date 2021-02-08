@@ -27,6 +27,22 @@ The site will be fully responsive and optimized to be viewed on different screen
 ## 1.5 User Stories
 As a anime fan with some time to kill why not play a memory game. Well hello theere 'Anime Memory Game' is here to the rescue. Coming off a google search i know what im expecting and want to get straight to it.
 
+### As a anime fan and developer:
+- I would like to present myself and my work in a way people can enjoy.
+- I need to demonstrate different skills.
+- I want for myself and children to enjoy the concept.
+
+### As a new player:
+
+- I hope to find entertainment which is associated with my interests.
+- I would like to be able to easly access this form of entertainment on multiple devices
+
+### As a returning player:
+
+- I hope for varying levels of difficulty to provide variaty when playing
+- I would like to check timetable for current days and times for a group trainings.
+- I want to show my friend a location of the fitness studio where we can join for a semi private personal training.
+
 ## 2 Site Content, Structure Concept and Development
 
 ### 2.1 Pages Overview
@@ -66,21 +82,18 @@ Web developer tools built directly into the Google Chrome browser. I used these 
 ### 3.5 Javascript
 JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions
 
-### 3.6 Google Fonts
-Fonts are provided by Google Fonts
-
-### 3.7 Gitpod
+### 3.6 Gitpod
 An online IDE which streamlines developer workflows by providing prebuilt, collaborative development environments in your browser - powered by VS Code. It does not have to be installed on your PC. This website has been constructed using Gitpod IDE
 
-### 3.8 GitHub Repository
+### 3.7 GitHub Repository
 This website is hosted on GitHub
 GitHub Repository:https://github.com/SdMusic/Ms2-Project
 Deployed Link: https://sdmusic.github.io/Ms2-Project/index.html
 
-### 3.9 W3C Markup Validation Service
+### 3.8 W3C Markup Validation Service
 Used to run all html and CSS code through a validation to identify if the code meets current standards and whether or not it is showing errors. https://validator.w3.org/ https://jigsaw.w3.org/css-validator/validator
 
-### 3.10 JShint service 
+### 3.9 JShint service 
 Used to run all Javascript through a validation to identify any code not confoming to current standards.
 https://jshint.com/
 
@@ -105,6 +118,21 @@ Deployment to GitHub pages is done through the GitHub site; through settings, th
 All versions are held on the master branch.
 
 Prior to deployment, the site could be viewed in real time by adding the following command to the terminal window, and selecting "Open Browser" from the modal that displays: python3 -m http.server
+
+To run localy:
+
+Log in to GitHub and click on repository to download
+select Code and click Download the ZIP file.
+after download you can extract the file and use it in your local environment
+Alternatively you can Clone or Fork this repository into your github account.
+
+## Code Validation
+At the and of the project I used two websites to validate a code
+
+- W3C CSS Validator to validate CSS
+- Nu Html Checker to test HTML
+
+Css and html is validated warnings remain on css due to webkits (these have been left to remain as they purely browser intigration)
 
 ## Testing
 
@@ -183,6 +211,12 @@ instructions of try to break this.
 - Test 2: Game used in different ways
 - Result: Functions complete intended function correctly
 
+## Preformance Testing
+
+I used Lighthouse (https://developers.google.com/web/tools/lighthouse/), prefomance checker to assess the performance of my site.
+screenshot below:
+
+<img src="assets/images/lighthouse.png">
 
 
 ## Bugs & Fixes
@@ -205,6 +239,11 @@ Snippets of code that I edited and used as examples are listed below:
 - Elements from my previous project including readme format.
 - Fireworks css - (https://codepen.io/yshlin/pen/ylDEk)
 
+### Game inspiration
+
+- Youtube (https://www.youtube.com/watch?v=28VfzEiJgy4)
+- Youtube (https://www.youtube.com/watch?v=tjyDOHzKN0w&feature=emb_logo)
+
 
 ### Audio from:
 - https://www.myinstants.com/
@@ -220,3 +259,7 @@ Snippets of code that I edited and used as examples are listed below:
 
 - https://stackoverflow.com/
 - https://www.w3schools.com/
+
+### Support 
+
+My brother Richard Freemantle
