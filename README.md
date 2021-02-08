@@ -138,12 +138,12 @@ Css and html is validated warnings remain on css due to webkits (these have been
 
 Testing has been carried out using the following devices/browsers:
 
-Desktop
-Chrome
-Firefox
-Chrome Responsive emulator
-Huawei P30 Pro
-Samsung Galaxy 7
+- Desktop
+- Chrome
+- Firefox
+- Chrome Responsive emulator
+- Huawei P30 Pro
+- Samsung Galaxy 7
 
 ### Page Layouts
 
@@ -260,6 +260,6 @@ Snippets of code that I edited and used as examples are listed below:
 - https://stackoverflow.com/
 - https://www.w3schools.com/
 
-### Support 
+### Support:
 
 My brother Richard Freemantle
